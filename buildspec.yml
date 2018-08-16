@@ -4,7 +4,8 @@ phases:
     commands:
       - npm install
       - npm install -g serverless
+      - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
   build:
     commands:
       - ls
-- serverless deploy --stage cicd | tee deploy.out
+      - serverless deploy --stage cicd | tee deploy.out
