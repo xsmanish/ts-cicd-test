@@ -20,7 +20,6 @@ service: ts-cicd-test
 provider:
   name: aws
   runtime: nodejs6.10
-  profile: default
   region: ap-southeast-1
 
 # you can overwrite defaults here
